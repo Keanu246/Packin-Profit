@@ -1,4 +1,4 @@
-var coins = 200;
+var coins = 0;
 
 function coinClick(number){
     coins = coins + number;
@@ -16,11 +16,14 @@ function buyPacker(){
     	coins = coins - packerCost;                          //removes the coins spent
         document.getElementById('packers').innerHTML = packers;  //updates the number of packers for the user
         document.getElementById('coins').innerHTML = coins;  //updates the number of coins for the user
-	document.getElementById('packerCoins').innerHTML = packerCoins;  //updates the number of coins per second by each packer
     };
     var nextCost = Math.floor(200 * Math.pow(1.2,packers));       //works out the cost of the next packer
     document.getElementById('packerCost').innerHTML = nextCost;  //updates the packer cost for the user
-};
+    };
+    var packerCoins = Math.floor(10 * Math.pow(1.05,packers));
+    if(coins >= packerCoins){
+    document.getElementById('packerCoins').innerHTML = packerCoins;  //updates the number of coins per second by each packer
+    }; 
 
 window.setInterval(function(){
 	
