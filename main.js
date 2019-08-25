@@ -1,4 +1,4 @@
-var coins = 0;
+var coins = 200;
 var holyboxes = 0;
 
 var packers = 0;
