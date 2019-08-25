@@ -10,14 +10,14 @@ var holyboxes = 0;
 var packers = 0;
 
 function buyPacker(){
-    var packerCost = Math.floor(200 * Math.pow(1.2,packers));     //works out the cost of this packer
+    var packerCost = Math.floor(100 * Math.pow(1.2,packers));     //works out the cost of this packer
     if(coins >= packerCost){                                   //checks that the player can afford the packer
         packers = packers + 1;                                   //increases number of packers
     	coins = coins - packerCost;                          //removes the coins spent
         document.getElementById('packers').innerHTML = packers;  //updates the number of packers for the user
         document.getElementById('coins').innerHTML = coins;  //updates the number of coins for the user
     };
-    var nextCost = Math.floor(200 * Math.pow(1.2,packers));       //works out the cost of the next packer
+    var nextCost = Math.floor(100 * Math.pow(1.2,packers));       //works out the cost of the next packer
     document.getElementById('packerCost').innerHTML = nextCost;  //updates the packer cost for the user
     };
     var packerCoins = Math.floor(10 * Math.pow(1.05,packers));
@@ -27,6 +27,6 @@ function buyPacker(){
 
 window.setInterval(function(){
 	
-	packerCoins(packers);
+	coinClick(packers);
 	
 }, 1000);
