@@ -20,10 +20,6 @@ function buyPacker(){
     var nextCost = Math.floor(100 * Math.pow(1.2,packers));       //works out the cost of the next packer
     document.getElementById('packerCost').innerHTML = nextCost;  //updates the packer cost for the user
     };
-    var packerCoins = Math.floor(10 * Math.pow(1.05,packers));
-    if(coins >= packerCoins){
-    document.getElementById('packerCoins').innerHTML = packerCoins;  //updates the number of coins per second by each packer
-    }; 
 
 window.setInterval(function(){
 	
