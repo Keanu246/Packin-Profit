@@ -14,7 +14,6 @@ function buyPacker(){
     if(coins >= packerCost){                                   //checks that the player can afford the packer
         packers = packers + 1;                                   //increases number of packers
     	coins = coins - packerCost;                          //removes the coins spent
-        document.getElementById('packerCoins').innerHTML = packerCoins; //adds coins per second per packer
         document.getElementById('packers').innerHTML = packers;  //updates the number of packers for the user
         document.getElementById('coins').innerHTML = coins;  //updates the number of coins for the user
     };
