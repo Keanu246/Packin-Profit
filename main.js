@@ -1,4 +1,10 @@
 var coins = 200;
+
+function coinClick(number){
+    coins = coins + number;
+    document.getElementById("coins").innerHTML = coins;
+};
+
 var holyboxes = 0;
 
 var packers = 0;
@@ -16,3 +22,8 @@ function buyPacker(){
     document.getElementById('packerCost').innerHTML = nextCost;  //updates the packer cost for the user
 };
 
+window.setInterval(function(){
+	
+	coinClick(packers);
+	
+}, 1000);
