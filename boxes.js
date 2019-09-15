@@ -1,4 +1,4 @@
-class Boxes
+class Box
 {
 	constructor(name, productivity, price)
 	{
