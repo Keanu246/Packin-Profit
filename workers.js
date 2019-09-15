@@ -1,15 +1,9 @@
-var packers = 0;
-var packerCost = 100;
-var packerCPS = 1;
-var packerTotal = 0;
+var workers = document.getElementById("workers");
 
-function buyPacker(){
-  if(coins >= packerCost){
-	  coins = coins - packerCost;
-	  packers = packers + 1;
-	  packerCost = Math.ceil(100 * 1.10**packers);
-	  document.getElementById("packers").innerHTML
-	  document.getElementById("packer").innerHTML
-	  document.getElementById("packerCPS").innerHTML
-	}
-}
+packer = new Worker("Packer", 1, 100);
+packer.set_visible();
+robot = new Worker("Robot", 50, 50000);
+factory_line = new Worker("Factory_Line", 2000, 30000000);
+technician = new Worker("Technician", 60000, 8500000000);
+
+setInterval(renew_coins, 1000);
