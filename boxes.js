@@ -1,7 +1,7 @@
 var pizzabox = 0;
 
 function buyPizzaBox(){
-  var pizzaboxCost = Math.floor(100 * Math.pow(1.10,pizzaboxes));
+  var pizzaboxCost = Math.floor(50 * Math.pow(1.10,pizzaboxes));
   if(coins >= pizzaboxCost){
      pizzaboxes = pizzaboxes + 1;
      coinClick = coinClick + 1;
@@ -10,6 +10,6 @@ function buyPizzaBox(){
      document.getElementById('coins').innerHTML = coins;
      document.getElementById('coinClick').innerHTML = coinClick;
   };
-  var nextCost = Math.floor(100 * Math.pow(1.1,pizzaboxes));
+  var nextCost = Math.floor(50 * Math.pow(1.1,pizzaboxes));
   document.getElementById('pizzaboxCost').innerHTML = nextCost; 
 };
