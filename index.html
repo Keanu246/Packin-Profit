@@ -1,31 +1,13 @@
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="interface.css"/>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
                 <script src="main.js"></script>
 		<script src="workers.js"></script>
 		<script src="boxes.js"></script>
 	</head>
 	<body>
-		<button onclick="coinClick(1)">Pack!</button>
-		<br>
-		Coins: <span id="coins">0</span>
-		<br>
-                Holy Boxes: <span id="holyboxes">0</span>
-                <br>
-		<button onclick="buyPacker()">Packer</button>
-		<br>
-		Packers: <span id="packers">0</span>
-		<br>
-		Packer Cost: <span id="packerCost">100</span>
-		<br>
-		Coins per second: <span id="packerCPS">0</span>
-		<br>
-		<button onclick="buyPizzaBox()">Pizza Box</button>
-		<br>
-		Pizza Boxes: <span id="pizzaboxes">0</span>
-		<br>
-		Pizza Box Cost: <span id="pizzaboxCost">50</span>
-		<br>
-		Coins per click: <span id="pizzaboxCPC">0</span>
+		<b>Coins: <span id="coins"></span></b><br>
+		Cookies produced: <span id="cookies_produced"></span><br>
+		<button onclick="clicker.click();">Pack!</button><br><br>
 	</body>
 </html>
