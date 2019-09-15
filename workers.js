@@ -30,11 +30,11 @@ class Worker
 		this.area.append(this.level_display);
 		this.area.append(document.createElement("br"));
 
-		this.area.append(document.createTextNode("Cookies per Second: "));
+		this.area.append(document.createTextNode("Coins per Second: "));
 		this.area.append(this.productivity_display);
 		this.area.append(document.createElement("br"));
 
-		this.area.append(document.createTextNode("Improvement Price: "));
+		this.area.append(document.createTextNode("Upgrade Price: "));
 		this.area.append(this.price_display);
 		this.area.append(document.createElement("br"));
 
@@ -52,9 +52,9 @@ class Worker
 	
 	upgrade()
 	{
-        	if(cookies >= this.get_price())
+        	if(coins >= this.get_price())
         	{
-        		cookies -= this.get_price();
+        		coins -= this.get_price();
         		this.level += 1;
         		altogether_productivity += this.productivity;
         		this.renew_display();
@@ -76,14 +76,14 @@ class Worker
 
 	set_visible()
 	{
-		buildings.append(this.area);
+		workers.append(this.area);
 		this.renew_display();
 	}
 
 	produce()
 	{
-		cookies += this.get_production_value();
-		cookies_produced += this.get_production_value();
+		coins += this.get_production_value();
+		coins_produced += this.get_production_value();
 	}
 	
 	get_production_value()
