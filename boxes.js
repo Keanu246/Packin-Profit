@@ -76,7 +76,7 @@ class Box
 
 	set_visible()
 	{
-		buildings.append(this.area);
+		boxes.append(this.area);
 		this.renew_display();
 	}
 
