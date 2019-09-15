@@ -18,7 +18,7 @@ function buyPacker(){
 
 window.setInterval(function(){
 	
-	packerCoins(packers);
+  packerCoins(packers);
   robotCoins(robots);
 	
 }, 1000);
