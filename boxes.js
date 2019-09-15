@@ -7,6 +7,7 @@ function buyPizzaBox(){
      pizzaboxes = pizzaboxes + 1;
      pizzaboxCoins = pizzaboxCoins + 1;
      coins = coins - pizzaboxCost;
+     coins = coins - pizzaboxCoins + 1;
      document.getElementById('pizzaboxes').innerHTML = pizzaboxes;
      document.getElementById('coins').innerHTML = coins;
      document.getElementById('pizzaboxCoins').innerHTML = pizzaboxCoins;
