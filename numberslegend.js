@@ -22,33 +22,33 @@ function rawFormatter(value) {return Math.round(value * 1000) / 1000;}
 
 var numberFormatters =
 [
-	rawFormatter,
-	formatEveryThirdPower([
-		'',
-		' million',
-		' billion',
-		' trillion',
-		' quadrillion',
-		' quintillion',
-		' sextillion',
-		' septillion',
-		' octillion',
+  rawFormatter,
+  formatEveryThirdPower([
+    '',
+    ' million',
+    ' billion',
+    ' trillion',
+    ' quadrillion',
+    ' quintillion',
+    ' sextillion',
+    ' septillion',
+    ' octillion',
     ' nonillion',
     ' decillion'
   ]),
   formatEveryThirdPower([
-		'',
-		' M',
-		' B',
-		' T',
-		' Qa',
-		' Qi',
-		' Sx',
-		' Sp',
-		' Oc',
-		' No',
-		' Dc'
-	])
+    '',
+    ' M',
+    ' B',
+    ' T',
+    ' Qa',
+    ' Qi',
+    ' Sx',
+    ' Sp',
+    ' Oc',
+    ' No',
+    ' Dc'
+  ])
 ];
 
 function Beautify(value,floats)
