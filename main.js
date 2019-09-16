@@ -17,6 +17,8 @@ function openTab(evt, pageName){
 var totalCPS = 0;
 var coins = 0;
 var coinstext = document.getElementById("coins");
+var holyboxes = 0;
+var holyboxestext = document.getElementById("holyboxes");
 var clickStr = 1;
 var clickCost = 100;
 var refreshRateVar = 100;
@@ -29,3 +31,9 @@ var robotCPS = 25;
 var factorylinePrice = 5000000;
 var factoryTotal = 0;
 var factoryBPS = 400;
+
+function addCoins() {
+	coins = coins + clickStr;
+	//console.log(getCookie("coins"))l;
+	document.getElementById("coins").innerHTML = coins.toFixed(1) + ' Coins';
+}
