@@ -8,3 +8,14 @@ function buyPacker() { //function for buying more workers
 		document.getElementById("packerProduce").innerHTML = 'Packing ' + (packerCPS * packerTotal).toFixed(1) + ' coins per second';
 	}
 }
+
+function buyRobot() { //function for buying more workers
+	if(coins >= robotPrice) {
+		coins = coins - robotPrice;
+		robotTotal = robotTotal + 1;
+		robotPrice = Math.ceil(25000 * 1.20**robotTotal);
+		document.getElementById("robot").innerHTML = 'Buy Robot for ' + robotPrice + ' Coins';
+		document.getElementById("robotAmmount").innerHTML = 'You have ' + robotTotal + ' Robots';
+		document.getElementById("robotProduce").innerHTML = 'Packing ' + (robotCPS * robotTotal).toFixed(1) + ' coins per second';
+	}
+}
