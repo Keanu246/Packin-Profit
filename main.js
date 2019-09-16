@@ -37,3 +37,9 @@ function addCoins() {
 	//console.log(getCookie("coins"))l;
 	document.getElementById("coins").innerHTML = coins.toFixed(1) + ' Coins';
 }
+
+function refreshRate() {
+	// hey should you use the same name for functions and variables? maybe
+	refreshRateVar = parseInt(document.getElementById("refreshRate").value);
+	document.getElementById("refreshRate").value;
+}
