@@ -1,13 +1,46 @@
+<!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="style.css"/>
-                <script src="main.js"></script>
-		<script src="workers.js"></script>
+		<script src="main.js"></script>
 		<script src="boxes.js"></script>
+		<script src="workers.js"></script>
+	        <script src="//cdn.rawgit.com/erosson/swarm-numberformat/v0.1.0/dist/swarm-numberformat.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title>Packin' Profit</title>
 	</head>
-	<body>
-		<b>Coins: <span id="coins"></span></b><br>
-		Coins total: <span id="coins_produced"></span><br>
-		<button onclick="clicker.click();">Pack!</button><br><br>
-	</body>
-</html>
+	<body onload="loadSave()">
+		<div class="tabs">
+			<button class="tablinks" onclick="openTab(event, 'Workers')">
+				<b>Workers</b>
+			</button>
+			<button class="tablinks" onclick="openTab(event, 'Upgrades');checkUpgrades()">
+				<b>Upgrades</b>
+			</button>
+			<button class="tablinks" onclick="openTab(event, 'Boxes')">
+				<b>Boxes</b>
+			</button>
+			<button class="tablinks" onclick="openTab(event, 'Shop')">
+				<b>Shop</b>
+			</button>
+			<button class="tablinks" onclick="openTab(event, 'Settings')">
+				<b>Settings</b>
+			</button>
+		</div>
+		<div id="Main" class="tabcontent">
+			<p id="coins">0 Coins </p>
+			<b id="holyboxes">0 Holy Boxes </b>
+			<p id="coinspersec">0 Coins per second</p>
+			<button id="click" onmouseup="addCoins()">Pack!</button>
+			<br>
+			<button id="packer" onclick="buyPacker()">Buy Packer for 100 Coins</button>
+			<p id="packerAmmount">You have 0 Packers</p>
+			<p id="packerProduce">Packing 1 Coin per second</p>
+			<br>
+			<button id="robot" onclick="buyRobot()">Buy Robot for 20000 Coins</button>
+			<p id="robotAmmount">You have 0 Robots</p>
+			<p id="robotProduce">Packing 25 Coins per second</p>
+			<br>
+			<button id="factoryline" onclick="buyFactoryLine()">Buy Factory Line for 5000000 Coins</button>
+			<p id="factorylineAmmount">You have 0 Factory Lines</p>
+			<p id="factorylineProduce">Packing 400 Coins per second</p>
+			<br>
