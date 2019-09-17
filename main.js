@@ -47,17 +47,17 @@ function refreshRate() {
 	document.getElementById("refreshRate").value;
 }
 
-window.setInterval(function() { //Adds together all the Bullets and then updates the elements in the HTML
+window.setInterval(function() { //Adds together all the Coins and then updates the elements in the HTML
 	coins = (coins + (packerTotal * packerCPS) + (robotTotal * robotCPS) + (pizzaboxTotal * pizzaboxCPC));
 		totalCPS = ((packerTotal * packerCPS) + (robotTotal * robotCPS));
 	        totalCPC = ((pizzaboxTotal * pizzaboxCPC)
 		document.getElementById("coinspersec").innerHTML = totalCPS.toFixed(1) + ' Coins per second'
 	        document.getElementById("coinsperclick").innerHTML = totalCPC.toFixed(1) + ' Coins per click'
 		document.getElementById("coins").innerHTML =  coins.toFixed(1) + ' Coins';
-		document.cookie = "bullets=" + bullets.toFixed(1);
+		document.cookie = "coins=" + coins.toFixed(1);
 }, 1000); // dont change this to anything other than 1000 lol
 
 window.setInterval(function() {
-	document.getElementById("bullets").innerHTML = bullets.toFixed(1) + ' Bullets';
+	document.getElementById("coins").innerHTML = coins.toFixed(1) + ' Coins';
 }, refreshRateVar);
 
