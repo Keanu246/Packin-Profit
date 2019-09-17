@@ -34,7 +34,7 @@ var factoryTotal = 0;
 var factoryBPS = 400;
 var pizzaboxPrice = 50;
 var pizzaboxTotal = 0;
-var pizzaboxCPC = 0
+var pizzaboxCPC = 1
 
 function addCoins() {
 	coins = coins + clickStr;
