@@ -31,6 +31,9 @@ var robotCPS = 25;
 var factorylinePrice = 5000000;
 var factoryTotal = 0;
 var factoryBPS = 400;
+var pizzaboxPrice = 50;
+var pizzaboxTotal = 0;
+var pizzaboxCPC = 1
 
 function addCoins() {
 	coins = coins + clickStr;
