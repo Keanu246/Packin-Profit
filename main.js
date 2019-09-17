@@ -15,6 +15,7 @@ function openTab(evt, pageName){
 }
 
 var totalCPS = 0;
+var totalCPC = 0;
 var coins = 0;
 var coinstext = document.getElementById("coins");
 var holyboxes = 0;
