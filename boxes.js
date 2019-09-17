@@ -1,4 +1,4 @@
-function BuyPizzaBox() { // function to buy more boxes
+function buyPizzaBox() { // function to buy more boxes
 
 	if (coins >= pizzaboxCost) {
 		coins = coins - pizzaboxCost;
