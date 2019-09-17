@@ -1,11 +1,11 @@
-function buyPizzaBox() { //function for buying more boxes
-	if(coins >= pizzaboxPrice) {
-		coins = coins - pizzaboxPrice;
-		pizzaboxTotal = pizzaboxTotal + 1;
-		pizzaboxPrice = Math.ceil(50 * 1.10**pizzaboxTotal);
+function BuyPizzaBox() { // function to buy more boxes
+
+	if (coins >= pizzaboxCost) {
+		coins = coins - pizzaboxCost;
 		clickStr = clickStr + 1;
-		document.getElementById("pizzabox").innerHTML = 'Buy Pizza Box for ' + pizzaboxPrice + ' Coins';
-		document.getElementById("pizzaboxAmmount").innerHTML = 'You have ' + pizzaboxTotal + ' Pizza Boxes';
-		document.getElementById("pizzaboxProduce").innerHTML = 'Packing ' + (pizzaboxCPC * pizzaboxTotal).toFixed(1) + ' coins per click';
+		pizzaboxTotal = pizzaboxTotal + 1;
+		pizzaboxPrice = pizzaboxPrice * 1.10;
+		localStorage.setItem("clickStr", clickStr); localStorage.setItem("pizzaboxPrice", pizzaboxPrice);
+		document.getElementById("clickCostDisplay").innerHTML = "Current level: " + clickStr.toFixed(1) + " Cost for next level: " + pizzaboxPrice.toFixed(1);
 	}
 }
