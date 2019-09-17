@@ -51,7 +51,7 @@ function refreshRate() {
 window.setInterval(function() { //Adds together all the Coins and then updates the elements in the HTML
 	coins = (coins + (packerTotal * packerCPS) + (robotTotal * robotCPS) + (pizzaboxTotal * pizzaboxCPC));
 		totalCPS = ((packerTotal * packerCPS) + (robotTotal * robotCPS));
-	        totalCPC = ((pizzaboxTotal * pizzaboxCPC)
+	        totalCPC = ((pizzaboxTotal * pizzaboxCPC))
 		document.getElementById("coinspersec").innerHTML = totalCPS.toFixed(1) + ' Coins per second'
 	        document.getElementById("coinsperclick").innerHTML = totalCPC.toFixed(1) + ' Coins per click'
 		document.getElementById("coins").innerHTML =  coins.toFixed(1) + ' Coins';
