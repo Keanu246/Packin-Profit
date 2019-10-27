@@ -74,12 +74,8 @@ function buyMulti1() {
 function buyMulti10() {
      if(buy10 >= coins) {
 	     buy10 = buy10 - coins;
-	     buy10 = buy10 + 1
+	     buy10 = buy10 + 10
 	     buy10 = Math.floor(10**packerPrice);
 	     document.getElementById("buy10").innerHTML = Math.floor(10**coins);
 	}
 }
-	     
-
-
-
