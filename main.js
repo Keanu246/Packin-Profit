@@ -15,7 +15,6 @@ function openTab(evt, pageName){
 }
 
 var totalCPS = 0;
-var totalCPC = 1;
 var coins = 0;
 var coinstext = document.getElementById("coins");
 var holyboxes = 0;
@@ -56,12 +55,7 @@ window.setInterval(function() { //Adds together all the Coins and then updates t
 		document.cookie = "coins=" + coins.toFixed(1);
 }, 1000); // dont change this to anything other than 1000 lol
 
-window.setInterval(function() { //Adds together all the Coins and then updates the elements in the HTML
-	coins = (coins + (pizzaboxTotal * pizzaboxCPC));
-		totalCPC = ((pizzaboxTotal * pizzaboxCPC));
-		document.getElementById("coinsperclick").innerHTML = totalCPC.toFixed(1) + ' Coins per click'
-		document.getElementById("coins").innerHTML =  coins.toFixed(1) + ' Coins';
-},
+
 
 window.setInterval(function() {
 	document.getElementById("coins").innerHTML = coins.toFixed(1) + ' Coins';
