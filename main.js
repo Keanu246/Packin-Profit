@@ -62,20 +62,8 @@ window.setInterval(function() {
 }, refreshRateVar);
 
 
-function buyMulti1() {
-     if(buy1 >= coins) {
-	     buy1 = buy1 - coins;
-	     buy1 = buy1 + 1
-	     buy1 = Math.floor(1**packerPrice);
-	     document.getElementById("buy1").innerHTML = Math.floor(1**coins);
-	}
-}
-
-function buyMulti10() {
-     if(buy10 >= coins) {
-	     buy10 = buy10 - coins;
-	     buy10 = buy10 + 10
-	     buy10 = Math.floor(10**packerPrice);
-	     document.getElementById("buy10").innerHTML = Math.floor(10**coins);
-	}
+var buyMulti = {
+	buy1:1,
+	buy10:10,
+	buy50:50
 }
