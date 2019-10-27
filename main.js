@@ -29,8 +29,8 @@ var robotPrice = 25000;
 var robotTotal = 0;
 var robotCPS = 25;
 var factorylinePrice = 5000000;
-var factoryTotal = 0;
-var factoryBPS = 400;
+var factorylineTotal = 0;
+var factorylineBPS = 400;
 var pizzaboxPrice = 50;
 var pizzaboxTotal = 0;
 var pizzaboxCPC = 1
@@ -60,3 +60,12 @@ window.setInterval(function() { //Adds together all the Coins and then updates t
 window.setInterval(function() {
 	document.getElementById("coins").innerHTML = coins.toFixed(1) + ' Coins';
 }, refreshRateVar);
+
+
+function buyMulti1
+     if(buy1 >= coins) {
+	     coins = coins - buy1;
+	     
+
+
+
