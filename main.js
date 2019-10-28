@@ -60,10 +60,3 @@ window.setInterval(function() { //Adds together all the Coins and then updates t
 window.setInterval(function() {
 	document.getElementById("coins").innerHTML = coins.toFixed(1) + ' Coins';
 }, refreshRateVar);
-
-
-var buyMulti = {
-	buy1:1,
-	buy10:10,
-	buy50:50
-}
