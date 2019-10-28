@@ -14,3 +14,10 @@ button {
     color: #000000;
     font-family: "Comic Sans MS", cursive, sans-serif;
 }
+
+@font-face {
+            font-family: 'regular';
+            src: url('fonts/comicsans.ttf') format('ttf'),
+            url('fonts/comicsans.ttf') format('ttf');
+            font-weight: normal;
+            font-style: normal;
