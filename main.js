@@ -50,8 +50,8 @@ function refreshRate() {
 window.setInterval(function() { //Adds together all the Coins and then updates the elements in the HTML
 	coins = (coins + (packerTotal * packerCPS) + (robotTotal * robotCPS));
 		totalCPS = ((packerTotal * packerCPS) + (robotTotal * robotCPS));
-		document.getElementById("coinspersec").innerHTML = numberformat.format(totalCPS.toFixed(1) + ' Coins per second')
-		document.getElementById("coins").innerHTML = numberformat.format(coins.toFixed(1) + ' Coins');
+		document.getElementById("coinspersec").innerHTML = totalCPS.toFixed(1) + ' Coins per second';
+		document.getElementById("coins").innerHTML = coins.toFixed(1) + ' Coins';
 		document.cookie = "coins=" + coins.toFixed(1);
 }, 1000); // dont change this to anything other than 1000 lol
 
