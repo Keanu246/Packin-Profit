@@ -5,16 +5,14 @@
 		<script src="boxes.js"></script>
 		<script src="workers.js"></script>
 		<script src="numberslegend.js"></script>
+		<script src="//cdn.jsdelivr.net/gh/keanu246/numberformat@v0.6.0/dist/swarm-numberformat.js"></script>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<title>Packin' Profit</title>
 	</head>
 	<body onload="loadSave()">
 		<div class="tabs">
-			<button class="tablinks" onclick="openTab(event, 'Workers')">
-				<b>Workers</b>
-			</button>
-			<button class="tablinks" onclick="openTab(event, 'Boxes')">
-				<b>Boxes</b>
+			<button class="tablinks" onclick="openTab(event, 'WorkersBoxes')">
+				<b>Workers and Boxes</b>
 			</button>
 			<button class="tablinks" onclick="openTab(event, 'Upgrades')">
 				<b>Upgrades</b>
@@ -26,7 +24,7 @@
 				<b>Settings</b>
 			</button>
 		</div>
-		<div id="Workers" class="tabcontent">
+		<div id="WorkersBoxes" class="tabcontent">
 			<p id="coins">0 Coins</p>
 			<b id="holyboxes">0 Holy Boxes</b>
 			<p id="coinspersec">0 Coins per second</p>
@@ -43,13 +41,6 @@
 			<button id="factoryline" onclick="buyFactoryLine()">Buy Factory Line for 5000000 Coins</button>
 			<p id="factorylineAmmount">You have 0 Factory Lines</p>
 			<p id="factorylineProduce">Packing 400 Coins per second</p>
-			<br>
-		</div>
-		<div id="Boxes" class="tabcontent">
-			<p id="coins">0 Coins</p>
-			<b id="holyboxes">0 Holy Boxes</b>
-			<p id="coinspersec">0 Coins per second</p>
-			<button id="click" onmouseup="addCoins()">Pack!</button>
 			<br>
 			<button id="pizzabox" onclick="buyPizzaBox()">Buy Pizza Box for 50 Coins</button>
 			<p id="pizzaboxAmmount">You have 0 Pizza Boxes</p>
