@@ -33,7 +33,10 @@ var factorylineTotal = 0;
 var factorylineCPS = 400;
 var pizzaboxPrice = 50;
 var pizzaboxTotal = 0;
-var pizzaboxCPC = 1
+var pizzaboxCPC = 1;
+var cardboardboxPrice = 10000;
+var cardboardboxTotal = 0;
+var cardboardboxCPC = 20;
 
 function addCoins() {
 	coins = coins + clickStr;
