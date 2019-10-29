@@ -9,3 +9,15 @@ function buyPizzaBox() { //function for buying more boxes
 		document.getElementById("pizzaboxProduce").innerHTML = 'Packing ' + pizzaboxTotal.toFixed(1) + ' coins per click';
 	}
 }
+
+function buyCardboardBox() { //function for buying more boxes
+	if(coins >= cardboardboxPrice) {
+		coins = coins - pizzaboxPrice;
+		cardboardboxTotal = cardboardboxTotal + 1;
+		clickStr = clickStr + 20;
+		cardboardboxPrice = Math.ceil(10000 * 1.20**cardboardboxTotal);
+		document.getElementById("cardboardbox").innerHTML = 'Buy Cardboard Box for ' + cardboardboxPrice + ' Coins';
+		document.getElementById("cardboardboxAmmount").innerHTML = 'You have ' + cardboardboxTotal + ' Cardboard Boxes';
+		document.getElementById("cardboardboxProduce").innerHTML = 'Packing ' + cardboardboxTotal.toFixed(1) + ' coins per click';
+	}
+}
