@@ -38,7 +38,7 @@ var pizzaboxCPC = 1
 function addCoins() {
 	coins = coins + clickStr;
 	//console.log(getCookie("coins"))l;
-	document.getElementById("coins").innerHTML = coins.toFixed(1) + ' Coins'
+	document.getElementById("coins").innerHTML = coins.toFixed(1) + ' Coins';
 }
 
 function refreshRate() {
