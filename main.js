@@ -30,7 +30,7 @@ var robotTotal = 0;
 var robotCPS = 25;
 var factorylinePrice = 5000000;
 var factorylineTotal = 0;
-var factorylineBPS = 400;
+var factorylineCPS = 400;
 var pizzaboxPrice = 50;
 var pizzaboxTotal = 0;
 var pizzaboxCPC = 1
@@ -38,7 +38,7 @@ var pizzaboxCPC = 1
 function addCoins() {
 	coins = coins + clickStr;
 	//console.log(getCookie("coins"))l;
-	document.getElementById("coins").innerHTML = (coins.toFixed(1) + ' Coins'
+	document.getElementById("coins").innerHTML = coins.toFixed(1) + ' Coins'
 }
 
 function refreshRate() {
